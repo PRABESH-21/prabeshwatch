@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHADUMANDU | Luxury Rolex Watches</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span>GHADUMANDU</span>
+      </div>
+      <nav class="main-nav" id="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li>
+            <a href="watchcollection.html">WATCH COLLECTION</a>
+            <span class="mobile-dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+            <ul class="dropdown-menu">
+              <li><a href="rolex.html">Rolex</a></li>
+              <li><a href="apple.html">Apple</a></li>
+              <li><a href="samsung.html">Samsung</a></li>
+            </ul>
+          </li>
+          <li><a href="heritage.html">HERITAGE</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="cart-icon">
+          <a href="#" id="cart-toggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Modal -->
+  <div class="overlay" id="overlay"></div>
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-header">
+      <h3>Your Shopping Cart</h3>
+      <button class="close-cart" id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be added here dynamically -->
+      <p>Your cart is empty</p>
+    </div>
+    <div class="cart-total">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+  </div>
+
+  <!-- Watch Collection Hero -->
+  <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+    <div class="container">
+      <h1>COMPLETE WATCH COLLECTION</h1>
+      <p>Explore our curated selection of luxury and smart watches</p>
+    </div>
+  </section>
+
+  <!-- Watch Collection Content -->
+  <section class="collections">
+    <div class="container">
+      <!-- Rolex Section -->
+      <div class="brand-section">
+        <h2 class="brand-header">ROLEX COLLECTION</h2>
+        <p class="brand-subtitle">Swiss-made excellence since 1905</p>
+        <div class="watch-specs-container">
+          <!-- Rolex Watch 1 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Submariner" class="watch-image">
+            <h3>Submariner Date</h3>
+            <p class="watch-description">The ultimate diving watch, waterproof to 300 meters</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126610LN</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">300m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3235</span></div>
+            </div>
+            <span class="price">$9,100</span>
+            <button class="add-to-cart" data-id="1" data-name="Submariner Date" data-price="9100" data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 2 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="GMT-Master II" class="watch-image">
+            <h3>GMT-Master II</h3>
+            <p class="watch-description">Dual time zone functionality with iconic design</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126710BLNR</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3285</span></div>
+            </div>
+            <span class="price">$10,700</span>
+            <button class="add-to-cart" data-id="2" data-name="GMT-Master II" data-price="10700" data-image="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 3 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Daytona" class="watch-image">
+            <h3>Cosmograph Daytona</h3>
+            <p class="watch-description">The racing legend with chronograph precision</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">116500LN</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">4130</span></div>
+            </div>
+            <span class="price">$13,150</span>
+            <button class="add-to-cart" data-id="3" data-name="Cosmograph Daytona" data-price="13150" data-image="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 4 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Datejust" class="watch-image">
+            <h3>Datejust 36</h3>
+            <p class="watch-description">Classic elegance with date function</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126200</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3235</span></div>
+            </div>
+            <span class="price">$6,900</span>
+            <button class="add-to-cart" data-id="4" data-name="Datejust 36" data-price="6900" data-image="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 5 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1557531365-e8b9c8395a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Day-Date" class="watch-image">
+            <h3>Day-Date 40</h3>
+            <p class="watch-description">The ultimate prestige watch with day and date</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">228238</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">18k Yellow Gold</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3255</span></div>
+            </div>
+            <span class="price">$36,550</span>
+            <button class="add-to-cart" data-id="5" data-name="Day-Date 40" data-price="36550" data-image="https://images.unsplash.com/photo-1557531365-e8b9c8395a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 6 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1585123388860-2d529e1f5a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Explorer" class="watch-image">
+            <h3>Explorer II</h3>
+            <p class="watch-description">Designed for cave explorers with 24-hour display</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">226570</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3285</span></div>
+            </div>
+            <span class="price">$8,550</span>
+            <button class="add-to-cart" data-id="6" data-name="Explorer II" data-price="8550" data-image="https://images.unsplash.com/photo-1585123388860-2d529e1f5a6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 7 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sea-Dweller" class="watch-image">
+            <h3>Sea-Dweller</h3>
+            <p class="watch-description">Professional diving watch waterproof to 1,220 meters</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126600</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">1220m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3235</span></div>
+            </div>
+            <span class="price">$11,350</span>
+            <button class="add-to-cart" data-id="7" data-name="Sea-Dweller" data-price="11350" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 8 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1557531365-e8b9c8395a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Yacht-Master" class="watch-image">
+            <h3>Yacht-Master 42</h3>
+            <p class="watch-description">Luxury sailing watch with regatta timer</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">226659</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">18k White Gold</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3235</span></div>
+            </div>
+            <span class="price">$28,500</span>
+            <button class="add-to-cart" data-id="8" data-name="Yacht-Master 42" data-price="28500" data-image="https://images.unsplash.com/photo-1557531365-e8b9c8395a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 9 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Air-King" class="watch-image">
+            <h3>Air-King</h3>
+            <p class="watch-description">Tribute to aviation pioneers</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">116900</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3131</span></div>
+            </div>
+            <span class="price">$7,250</span>
+            <button class="add-to-cart" data-id="9" data-name="Air-King" data-price="7250" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 10 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Milgauss" class="watch-image">
+            <h3>Milgauss</h3>
+            <p class="watch-description">Designed for scientists, resistant to magnetic fields</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">116400GV</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3131</span></div>
+            </div>
+            <span class="price">$8,300</span>
+            <button class="add-to-cart" data-id="10" data-name="Milgauss" data-price="8300" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 11 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sky-Dweller" class="watch-image">
+            <h3>Sky-Dweller</h3>
+            <p class="watch-description">Annual calendar and dual time zone for travelers</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">326934</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">9001</span></div>
+            </div>
+            <span class="price">$14,800</span>
+            <button class="add-to-cart" data-id="11" data-name="Sky-Dweller" data-price="14800" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 12 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cellini" class="watch-image">
+            <h3>Cellini Moonphase</h3>
+            <p class="watch-description">Elegant dress watch with moon phase complication</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">50535</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Everose Gold</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3195</span></div>
+            </div>
+            <span class="price">$26,750</span>
+            <button class="add-to-cart" data-id="12" data-name="Cellini Moonphase" data-price="26750" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 13 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pearlmaster" class="watch-image">
+            <h3>Pearlmaster 39</h3>
+            <p class="watch-description">Ultimate luxury with diamond-set bezel</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">86409RBR</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">18k Everose Gold</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3235</span></div>
+            </div>
+            <span class="price">$58,500</span>
+            <button class="add-to-cart" data-id="13" data-name="Pearlmaster 39" data-price="58500" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 14 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="GMT-Master II" class="watch-image">
+            <h3>GMT-Master II "Pepsi"</h3>
+            <p class="watch-description">Iconic blue and red bezel for travelers</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126710BLRO</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3285</span></div>
+            </div>
+            <span class="price">$10,700</span>
+            <button class="add-to-cart" data-id="14" data-name="GMT-Master II 'Pepsi'" data-price="10700" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Rolex Watch 15 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Daytona" class="watch-image">
+            <h3>Daytona "Rainbow"</h3>
+            <p class="watch-description">Ultra-luxurious with rainbow sapphire bezel</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">116595RBOW</span></div>
+              <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">18k Everose Gold</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">4130</span></div>
+            </div>
+            <span class="price">$96,950</span>
+            <button class="add-to-cart" data-id="15" data-name="Daytona 'Rainbow'" data-price="96950" data-image="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apple Section -->
+      <div class="brand-section">
+        <h2 class="brand-header">APPLE WATCH COLLECTION</h2>
+        <p class="brand-subtitle">Innovative technology for a connected lifestyle</p>
+        <div class="watch-specs-container">
+          <!-- Apple Watch 1 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1617625802917-ca26d1dc8c60?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Ultra" class="watch-image">
+            <h3>Apple Watch Ultra</h3>
+            <p class="watch-description">For athletes and adventurers with extreme durability</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">49mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">36 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$799</span>
+            <button class="add-to-cart" data-id="16" data-name="Apple Watch Ultra" data-price="799" data-image="https://images.unsplash.com/photo-1617625802917-ca26d1dc8c60?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 2 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 9" class="watch-image">
+            <h3>Apple Watch Series 9</h3>
+            <p class="watch-description">The most advanced Apple Watch with powerful health features</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$429</span>
+            <button class="add-to-cart" data-id="17" data-name="Apple Watch Series 9" data-price="429" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 3 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch SE" class="watch-image">
+            <h3>Apple Watch SE</h3>
+            <p class="watch-description">Essential features at an exceptional value</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$249</span>
+            <button class="add-to-cart" data-id="18" data-name="Apple Watch SE" data-price="249" data-image="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 4 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 8" class="watch-image">
+            <h3>Apple Watch Series 8</h3>
+            <p class="watch-description">Advanced health monitoring with temperature sensing</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$399</span>
+            <button class="add-to-cart" data-id="19" data-name="Apple Watch Series 8" data-price="399" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 5 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Hermès" class="watch-image">
+            <h3>Apple Watch Hermès</h3>
+            <p class="watch-description">Luxury collaboration with premium leather bands</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$1,299</span>
+            <button class="add-to-cart" data-id="20" data-name="Apple Watch Hermès" data-price="1299" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 6 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Nike" class="watch-image">
+            <h3>Apple Watch Nike</h3>
+            <p class="watch-description">Sport-focused with exclusive Nike watch faces</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$429</span>
+            <button class="add-to-cart" data-id="21" data-name="Apple Watch Nike" data-price="429" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 7 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Edition" class="watch-image">
+            <h3>Apple Watch Edition</h3>
+            <p class="watch-description">Premium materials including titanium and ceramic</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$799</span>
+            <button class="add-to-cart" data-id="22" data-name="Apple Watch Edition" data-price="799" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 8 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch SE Cellular" class="watch-image">
+            <h3>Apple Watch SE (Cellular)</h3>
+            <p class="watch-description">Stay connected without your phone</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$329</span>
+            <button class="add-to-cart" data-id="23" data-name="Apple Watch SE (Cellular)" data-price="329" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 9 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 7" class="watch-image">
+            <h3>Apple Watch Series 7</h3>
+            <p class="watch-description">Larger display with faster charging</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$399</span>
+            <button class="add-to-cart" data-id="24" data-name="Apple Watch Series 7" data-price="399" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 10 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 6" class="watch-image">
+            <h3>Apple Watch Series 6</h3>
+            <p class="watch-description">Blood oxygen monitoring and always-on display</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$349</span>
+            <button class="add-to-cart" data-id="25" data-name="Apple Watch Series 6" data-price="349" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 11 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 5" class="watch-image">
+            <h3>Apple Watch Series 5</h3>
+            <p class="watch-description">First with always-on Retina display</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$299</span>
+            <button class="add-to-cart" data-id="26" data-name="Apple Watch Series 5" data-price="299" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 12 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 4" class="watch-image">
+            <h3>Apple Watch Series 4</h3>
+            <p class="watch-description">Redesigned with larger display and ECG</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$249</span>
+            <button class="add-to-cart" data-id="27" data-name="Apple Watch Series 4" data-price="249" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 13 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 3" class="watch-image">
+            <h3>Apple Watch Series 3</h3>
+            <p class="watch-description">Affordable option with core features</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">42mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$199</span>
+            <button class="add-to-cart" data-id="28" data-name="Apple Watch Series 3" data-price="199" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 14 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 2" class="watch-image">
+            <h3>Apple Watch Series 2</h3>
+            <p class="watch-description">First with built-in GPS and swim-proof</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">42mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">Yes</span></div>
+            </div>
+            <span class="price">$149</span>
+            <button class="add-to-cart" data-id="29" data-name="Apple Watch Series 2" data-price="149" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Apple Watch 15 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Apple Watch Original" class="watch-image">
+            <h3>Apple Watch Original</h3>
+            <p class="watch-description">The first generation that started it all</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">42mm Retina</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">Splash proof</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">18 hours</span></div>
+              <div class="spec-item"><span class="spec-label">GPS</span><span class="spec-value">No</span></div>
+            </div>
+            <span class="price">$99</span>
+            <button class="add-to-cart" data-id="30" data-name="Apple Watch Original" data-price="99" data-image="https://images.unsplash.com/photo-1635350736475-c8cef4b219dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Section -->
+      <div class="brand-section">
+        <h2 class="brand-header">SAMSUNG WATCH COLLECTION</h2>
+        <p class="brand-subtitle">Advanced health tracking with stylish design</p>
+        <div class="watch-specs-container">
+          <!-- Samsung Watch 1 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch6 Classic" class="watch-image">
+            <h3>Galaxy Watch6 Classic</h3>
+            <p class="watch-description">Premium smartwatch with rotating bezel</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">47mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">40 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Wear OS</span></div>
+            </div>
+            <span class="price">$429</span>
+            <button class="add-to-cart" data-id="31" data-name="Galaxy Watch6 Classic" data-price="429">ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 2 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720827860-3b8c6c0b6b0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch6" class="watch-image">
+            <h3>Galaxy Watch6</h3>
+            <p class="watch-description">Sleek design with advanced health monitoring</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">30 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Wear OS</span></div>
+            </div>
+            <span class="price">$299</span>
+            <button class="add-to-cart" data-id="32" data-name="Galaxy Watch6" data-price="299" data-image="https://images.unsplash.com/photo-1655720827860-3b8c6c0b6b0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 3 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch5 Pro" class="watch-image">
+            <h3>Galaxy Watch5 Pro</h3>
+            <p class="watch-description">Built for endurance with military-grade durability</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">80 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Wear OS</span></div>
+            </div>
+            <span class="price">$449</span>
+            <button class="add-to-cart" data-id="33" data-name="Galaxy Watch5 Pro" data-price="449" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 4 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch5" class="watch-image">
+            <h3>Galaxy Watch5</h3>
+            <p class="watch-description">Advanced health tracking with stylish design</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">50 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Wear OS</span></div>
+            </div>
+            <span class="price">$279</span>
+            <button class="add-to-cart" data-id="34" data-name="Galaxy Watch5" data-price="279" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 5 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch4 Classic" class="watch-image">
+            <h3>Galaxy Watch4 Classic</h3>
+            <p class="watch-description">Premium design with rotating bezel</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">46mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">40 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Wear OS</span></div>
+            </div>
+            <span class="price">$349</span>
+            <button class="add-to-cart" data-id="35" data-name="Galaxy Watch4 Classic" data-price="349" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 6 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch Active2" class="watch-image">
+            <h3>Galaxy Watch Active2</h3>
+            <p class="watch-description">Sleek, lightweight design with touch bezel</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">60 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$249</span>
+            <button class="add-to-cart" data-id="36" data-name="Galaxy Watch Active2" data-price="249">ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 7 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch3" class="watch-image">
+            <h3>Galaxy Watch3</h3>
+            <p class="watch-description">Premium materials with advanced health features</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">45mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">56 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$399</span>
+            <button class="add-to-cart" data-id="37" data-name="Galaxy Watch3" data-price="399" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 8 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch Active" class="watch-image">
+            <h3>Galaxy Watch Active</h3>
+            <p class="watch-description">Lightweight and comfortable for active lifestyles</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">40mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">45 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$199</span>
+            <button class="add-to-cart" data-id="38" data-name="Galaxy Watch Active" data-price="199">ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 9 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch" class="watch-image">
+            <h3>Galaxy Watch (2018)</h3>
+            <p class="watch-description">The original Galaxy Watch with rotating bezel</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">46mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">7 days</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$329</span>
+            <button class="add-to-cart" data-id="39" data-name="Galaxy Watch (2018)" data-price="329">ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 10 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gear S3 Frontier" class="watch-image">
+            <h3>Gear S3 Frontier</h3>
+            <p class="watch-description">Rugged design with LTE connectivity</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">46mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">IP68</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">4 days</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$349</span>
+            <button class="add-to-cart" data-id="40" data-name="Gear S3 Frontier" data-price="349" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 11 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gear Sport" class="watch-image">
+            <h3>Gear Sport</h3>
+            <p class="watch-description">Designed for fitness with swim tracking</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">42mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">3 days</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$249</span>
+            <button class="add-to-cart" data-id="41" data-name="Gear Sport" data-price="249" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 12 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gear S2" class="watch-image">
+            <h3>Gear S2</h3>
+            <p class="watch-description">Innovative rotating bezel interface</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">42mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">IP68</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">3 days</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$199</span>
+            <button class="add-to-cart" data-id="42" data-name="Gear S2" data-price="199" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 13 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gear Fit2 Pro" class="watch-image">
+            <h3>Gear Fit2 Pro</h3>
+            <p class="watch-description">Fitness band with advanced tracking</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">1.5" AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">5 days</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$149</span>
+            <button class="add-to-cart" data-id="43" data-name="Gear Fit2 Pro" data-price="149" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 14 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gear S" class="watch-image">
+            <h3>Gear S</h3>
+            <p class="watch-description">Curved Super AMOLED display</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">2" AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">IP67</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">2 days</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Tizen</span></div>
+            </div>
+            <span class="price">$99</span>
+            <button class="add-to-cart" data-id="44" data-name="Gear S" data-price="99" >ADD TO CART</button>
+          </div>
+
+          <!-- Samsung Watch 15 -->
+          <div class="watch-specs">
+            <img src="https://images.unsplash.com/photo-1655720828015-0c8c6c270b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Galaxy Watch FE" class="watch-image">
+            <h3>Galaxy Watch FE</h3>
+            <p class="watch-description">Fan Edition with premium features</p>
+            <div class="spec-grid">
+              <div class="spec-item"><span class="spec-label">Display</span><span class="spec-value">44mm AMOLED</span></div>
+              <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">50m</span></div>
+              <div class="spec-item"><span class="spec-label">Battery Life</span><span class="spec-value">40 hours</span></div>
+              <div class="spec-item"><span class="spec-label">OS</span><span class="spec-value">Wear OS</span></div>
+            </div>
+            <span class="price">$199</span>
+            <button class="add-to-cart" data-id="45" data-name="Galaxy Watch FE" data-price="199">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>GHADUMANDU</span>
+          <p>Authorized Rolex Retailer</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>COLLECTIONS</h4>
+            <ul>
+              <li><a href="rolex.html">Rolex</a></li>
+              <li><a href="apple.html">Apple</a></li>
+              <li><a href="samsung.html">Samsung</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>SERVICES</h4>
+            <ul>
+              <li><a href="services.html">Watch Servicing</a></li>
+              <li><a href="services.html">Authentication</a></li>
+              <li><a href="services.html">Warranty</a></li>
+              <li><a href="services.html">Care Instructions</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 GHADUMANDU. All Rights Reserved. Rolex is a registered trademark.</p>
+      </div>
+    </div>
+  </footer>
+
+   <script src="main.js"></script>
+   <!-- Checkout Popup -->
+<div class="checkout-popup" id="checkout-popup">
+  <div class="checkout-popup-content">
+    <button class="close-checkout-popup" id="close-checkout-popup">&times;</button>
+    <h3>Proceed to Checkout</h3>
+    <div class="checkout-summary" id="checkout-summary">
+      <!-- Checkout items will be added here -->
+    </div>
+    <form class="checkout-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <textarea id="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select id="payment" required>
+          <option value="">Select payment method</option>
+          <option value="credit">Credit Card</option>
+          <option value="Cash ON Deliver">Cash ON Delivery</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank">Bank Transfer</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-order">PLACE ORDER</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

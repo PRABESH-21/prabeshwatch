@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHADUMANDU | Luxury Rolex Watches</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span>GHADUMANDU</span>
+      </div>
+      <nav class="main-nav" id="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li>
+            <a href="watchcollection.html">WATCH COLLECTION</a>
+            <span class="mobile-dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+            <ul class="dropdown-menu">
+              <li><a href="rolex.html">Rolex</a></li>
+              <li><a href="apple.html">Apple</a></li>
+              <li><a href="samsung.html">Samsung</a></li>
+            </ul>
+          </li>
+          <li><a href="heritage.html">HERITAGE</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="cart-icon">
+          <a href="#" id="cart-toggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (sample) -->
+  <section class="hero">
+    <h1>Welcome to GHADUMANDU</h1>
+  </section>
+
+  <!-- Cart Modal -->
+  <div class="overlay" id="overlay"></div>
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-header">
+      <h3>Your Shopping Cart</h3>
+      <button class="close-cart" id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be added here dynamically -->
+      <p>Your cart is empty</p>
+    </div>
+    <div class="cart-total">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+  </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>ELEVATE YOUR TIME</h1>
+      <p class="subtitle">Discover the pinnacle of Swiss watchmaking excellence</p>
+      <a href="watchcollection.html" class="cta-button">EXPLORE COLLECTION</a>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Professional Series Section -->
+  <section class="professional-series">
+    <div class="container">
+      <div class="section-header">
+        <p style="color: rgb(17, 226, 229);"><h2>PROFESSIONAL SERIES</h2></p>
+
+        <p class="section-subtitle">Engineered for exceptional performance</p>
+      </div>
+      <div class="series-grid">
+        <div class="series-card">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Rolex Submariner">
+          <div class="series-info">
+            <h3>Submariner</h3>
+            <p>The ultimate diving watch, waterproof to 300 meters</p>
+            <a href="#" class="learn-more">LEARN MORE <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="series-card">
+          <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Rolex GMT-Master II">
+          <div class="series-info">
+            <h3>GMT-Master II</h3>
+            <p>Designed for global travelers with dual time zones</p>
+            <a href="#" class="learn-more">LEARN MORE <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="series-card">
+          <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Rolex Cosmograph Daytona">
+          <div class="series-info">
+            <h3>Cosmograph Daytona</h3>
+            <p>The racing legend with chronograph precision</p>
+            <a href="#" class="learn-more">LEARN MORE <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Collections Section -->
+  <section class="collections" id="collections">
+    <div class="section-header">
+      <h2>ICONIC COLLECTIONS</h2>
+      <p class="section-subtitle">Masterpieces of precision engineering</p>
+    </div>
+
+   <div class="watch-specs-container">
+  <!-- Watch 1 -->
+     <div class="watch-specs">
+          <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="GMT-Master II" class="watch-image">
+          <h3>GMT-Master II</h3>
+          <p class="watch-description">Dual time zone functionality with iconic design</p>
+          <div class="spec-grid">
+            <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126710BLNR</span></div>
+            <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+            <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+            <div class="spec-item"><span class="spec-label">Movement</span><span class="spec-value">3285</span></div>
+          </div>
+          <span class="price">$10,700</span>
+       
+        </div>
+
+
+  <!-- Watch 2 -->
+  <div class="watch-specs">
+    <div class="watch-image-container">
+      <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Oyster Perpetual 41" class="watch-image" />
+    </div>
+    <h3>Oyster Perpetual 41</h3>
+    <p class="watch-description">Timeless elegance with exceptional reliability</p>
+    <div class="spec-grid">
+      <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+      <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">124300</span></div>
+      <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+      <div class="spec-item"><span class="spec-label">Power Reserve</span><span class="spec-value">70 hours</span></div>
+    </div>
+    <span class="price">$5,900</span>
+  </div>
+
+  <!-- Watch 3 -->
+  <div class="watch-specs">
+    <div class="watch-image-container">
+      <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Datejust 36" class="watch-image" />
+    </div>
+    <h3>Datejust 36</h3>
+    <p class="watch-description">Classic sophistication with modern precision</p>
+    <div class="spec-grid">
+      <div class="spec-item"><span class="spec-label">Material</span><span class="spec-value">Oystersteel</span></div>
+      <div class="spec-item"><span class="spec-label">Reference</span><span class="spec-value">126200</span></div>
+      <div class="spec-item"><span class="spec-label">Water Resistance</span><span class="spec-value">100m</span></div>
+      <div class="spec-item"><span class="spec-label">Power Reserve</span><span class="spec-value">70 hours</span></div>
+    </div>
+    <span class="price">$7,650</span>
+  </div>
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span>GHADUMANDU</span>
+          <p>Authorized Rolex Retailer</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>COLLECTIONS</h4>
+            <ul>
+              <li><a href="rolex.html">Rolex</a></li>
+              <li><a href="apple.html">Apple</a></li>
+              <li><a href="samsung.html">Samsung</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>SERVICES</h4>
+            <ul>
+              <li><a href="services.html">Watch Servicing</a></li>
+              <li><a href="services.html">Authentication</a></li>
+              <li><a href="services.html">Warranty</a></li>
+              <li><a href="services.html">Care Instructions</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 GHADUMANDU. All Rights Reserved. Rolex is a registered trademark.</p>
+      </div>
+    </div>
+  </footer>
+<!-- Cart Modal -->
+  <div class="overlay" id="overlay"></div>
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-header">
+      <h3>Your Shopping Cart</h3>
+      <button class="close-cart" id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be added here dynamically -->
+      <p>Your cart is empty</p>
+    </div>
+    <div class="cart-total">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+  </div>
+
+  <!-- Checkout Popup -->
+  <div class="checkout-popup" id="checkout-popup">
+    <div class="checkout-popup-content">
+      <button class="close-checkout-popup" id="close-checkout-popup">&times;</button>
+      <h3>Proceed to Checkout</h3>
+      <div class="checkout-summary" id="checkout-summary">
+        <!-- Checkout items will be added here -->
+      </div>
+      <form class="checkout-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <textarea id="address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="payment">Payment Method</label>
+          <select id="payment" required>
+            <option value="">Select payment method</option>
+            <option value="credit">Credit Card</option>
+            <option value="Cash On Delivery">Cash On Delivery</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank">Bank Transfer</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-order">PLACE ORDER</button>
+      </form>
+    </div>
+  </div>
+ 
+  <script src="main.js"></script>
+</body>
+</html>
